@@ -1,0 +1,85 @@
+.header {
+  background: var(--green-800);
+  color: white;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.header-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.header-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.header-subtitle {
+  display: block;
+  font-size: 11px;
+  opacity: 0.75;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-link {
+  padding: 6px 16px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.12);
+  color: white;
+}
+
+.nav-link--leads {
+  background: rgba(234,179,8,0.15);
+  color: #fef08a;
+}
+.nav-link--leads:hover {
+  background: rgba(234,179,8,0.25);
+  color: white;
+}
+.nav-link--leads.active {
+  background: rgba(234,179,8,0.3);
+  color: white;
+}
+
+.nav-link.active {
+  background: rgba(255,255,255,0.18);
+  color: white;
+}
