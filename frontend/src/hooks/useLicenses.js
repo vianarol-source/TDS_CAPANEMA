@@ -14,6 +14,7 @@ export function useLicenses() {
       if (filters.type) params.set('type', filters.type);
       if (filters.status) params.set('status', filters.status);
       if (filters.query) params.set('q', filters.query);
+      if (filters.ruralOnly) params.set('ruralOnly', 'true');
       params.set('page', page);
       params.set('limit', 20);
 

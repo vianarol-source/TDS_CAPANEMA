@@ -13,6 +13,7 @@ router.get(
     query('q').optional().isString().trim(),
     query('page').optional().isInt({ min: 1 }).toInt(),
     query('limit').optional().isInt({ min: 1, max: 100 }).toInt(),
+    query('ruralOnly').optional().isBoolean().toBoolean(),
   ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -26,6 +27,7 @@ router.get(
       type: req.query.type,
       status: req.query.status,
       query: req.query.q,
+      ruralOnly: req.query.ruralOnly === true || req.query.ruralOnly === 'true',
       page: req.query.page || 1,
       limit: req.query.limit || 20,
     });

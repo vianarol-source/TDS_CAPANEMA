@@ -6,14 +6,14 @@ const USE_MOCK = process.env.USE_MOCK !== 'false';
 // IBAMA open data base URL (dadosabertos.ibama.gov.br)
 const IBAMA_BASE_URL = 'https://dadosabertos.ibama.gov.br/dados/SIFISC/auto_infracao';
 
-export async function searchLicenses({ states = [], type, status, query, page = 1, limit = 20 }) {
+export async function searchLicenses({ states = [], type, status, query, ruralOnly, page = 1, limit = 20 }) {
   if (USE_MOCK) {
-    return searchMock({ states, type, status, query, page, limit });
+    return searchMock({ states, type, status, query, ruralOnly, page, limit });
   }
   return searchIBAMA({ states, type, status, query, page, limit });
 }
 
-function searchMock({ states, type, status, query, page, limit }) {
+function searchMock({ states, type, status, query, ruralOnly, page, limit }) {
   let results = [...mockLicenses];
 
   if (states.length > 0) {
@@ -24,6 +24,9 @@ function searchMock({ states, type, status, query, page, limit }) {
   }
   if (status) {
     results = results.filter(l => l.status === status);
+  }
+  if (ruralOnly) {
+    results = results.filter(l => l.isRuralProducer);
   }
   if (query) {
     const q = query.toLowerCase();

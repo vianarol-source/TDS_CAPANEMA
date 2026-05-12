@@ -70,6 +70,21 @@ export default function SearchFilters({ filters, onChange, onSearch, loading }) 
         </div>
       </div>
 
+      <div className="filter-rural">
+        <label className="rural-toggle">
+          <input
+            type="checkbox"
+            checked={!!filters.ruralOnly}
+            onChange={e => handleChange('ruralOnly', e.target.checked)}
+          />
+          <span className="rural-toggle-icon">🌾</span>
+          <span className="rural-toggle-label">Apenas Produtores Rurais</span>
+          <span className="rural-toggle-hint">
+            Agropecuária · Silvicultura · Aquicultura
+          </span>
+        </label>
+      </div>
+
       <div className="filters-footer">
         <button
           className="btn-search"

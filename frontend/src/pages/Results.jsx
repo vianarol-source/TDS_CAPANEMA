@@ -16,7 +16,7 @@ export default function Results() {
     location.state?.selectedStates ?? []
   );
   const [filters, setFilters] = useState(
-    location.state?.filters ?? { query: '', type: '', status: '' }
+    location.state?.filters ?? { query: '', type: '', status: '', ruralOnly: false }
   );
   const [page, setPage] = useState(1);
   const [showSelector, setShowSelector] = useState(false);

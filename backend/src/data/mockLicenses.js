@@ -1,4 +1,5 @@
 import { STATES } from './states.js';
+import { RURAL_ACTIVITIES } from './cnae.js';
 
 const LICENSE_TYPES = ['LP', 'LI', 'LO', 'LAC', 'LAS', 'LAAS'];
 const LICENSE_TYPE_LABELS = {
@@ -68,6 +69,9 @@ function generateLicenses(count) {
     const year = issueDate.substring(0, 4);
     const seq = Math.floor(Math.random() * 99999) + 1;
 
+    const activity = ACTIVITIES[Math.floor(Math.random() * ACTIVITIES.length)];
+    const isRuralProducer = RURAL_ACTIVITIES.includes(activity);
+
     licenses.push({
       id: idCounter++,
       number: generateLicenseNumber(state.uf, year, seq),
@@ -76,7 +80,8 @@ function generateLicenses(count) {
       status,
       company: COMPANIES[Math.floor(Math.random() * COMPANIES.length)],
       cnpj: generateCNPJ(),
-      activity: ACTIVITIES[Math.floor(Math.random() * ACTIVITIES.length)],
+      activity,
+      isRuralProducer,
       state: state.uf,
       stateName: state.name,
       region: state.region,
@@ -84,7 +89,7 @@ function generateLicenses(count) {
       issueDate,
       expiryDate,
       municipality: `Município ${Math.floor(Math.random() * 100) + 1}`,
-      description: `Licença ${LICENSE_TYPE_LABELS[type]} para atividade de ${ACTIVITIES[Math.floor(Math.random() * ACTIVITIES.length)].toLowerCase()} no estado de ${state.name}.`,
+      description: `Licença ${LICENSE_TYPE_LABELS[type]} para atividade de ${activity.toLowerCase()} no estado de ${state.name}.`,
     });
   }
 

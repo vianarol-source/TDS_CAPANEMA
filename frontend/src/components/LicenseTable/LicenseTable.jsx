@@ -67,7 +67,12 @@ export default function LicenseTable({ licenses, pagination, onPageChange, loadi
                 >
                   <td className="td-number">{license.number}</td>
                   <td className="td-company">
-                    <div className="company-name">{license.company}</div>
+                    <div className="company-name">
+                      {license.company}
+                      {license.isRuralProducer && (
+                        <span className="rural-badge" title="Produtor Rural">🌾 Rural</span>
+                      )}
+                    </div>
                     <div className="company-cnpj">{license.cnpj}</div>
                   </td>
                   <td>
@@ -116,7 +121,11 @@ export default function LicenseTable({ licenses, pagination, onPageChange, loadi
                         </div>
                         <div className="detail-contact">
                           <span className="detail-label">Contato do Responsável</span>
-                          <ContactPanel cnpj={license.cnpj} company={license.company} />
+                          <ContactPanel
+                            cnpj={license.cnpj}
+                            company={license.company}
+                            isRuralProducer={license.isRuralProducer}
+                          />
                         </div>
                       </div>
                     </td>

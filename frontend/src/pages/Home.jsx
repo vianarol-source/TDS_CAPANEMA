@@ -5,7 +5,7 @@ import SearchFilters from '../components/SearchFilters/SearchFilters.jsx';
 import { useLicenses } from '../hooks/useLicenses.js';
 import './Home.css';
 
-const DEFAULT_FILTERS = { query: '', type: '', status: '' };
+const DEFAULT_FILTERS = { query: '', type: '', status: '', ruralOnly: false };
 
 export default function Home() {
   const [selectedStates, setSelectedStates] = useState([]);

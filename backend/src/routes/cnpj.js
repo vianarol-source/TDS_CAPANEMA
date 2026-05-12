@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import axios from 'axios';
+import { isRuralByCnae } from '../data/cnae.js';
 
 const router = Router();
 
@@ -61,6 +62,8 @@ function mapBrasilAPI(data) {
       qualificacao: s.qualificacao_socio,
       cpfCnpj: s.cnpj_cpf_do_socio || null,
     })),
+    isRuralProducer: isRuralByCnae(data.cnae_fiscal, data.cnae_fiscal_descricao),
+    cnaeFiscal: data.cnae_fiscal ? String(data.cnae_fiscal) : null,
     _source: 'BrasilAPI / Receita Federal',
   };
 }
@@ -97,6 +100,8 @@ function generateMockContact(cnpj) {
       { nome: 'JOÃO DA SILVA', qualificacao: 'Sócio-Administrador', cpfCnpj: null },
       { nome: 'MARIA OLIVEIRA', qualificacao: 'Sócia', cpfCnpj: null },
     ],
+    isRuralProducer: seed % 3 === 0,
+    cnaeFiscal: seed % 3 === 0 ? '0115600' : '2099101',
     _source: 'Dados ilustrativos (dev) — em produção consulta BrasilAPI / Receita Federal',
   };
 }
