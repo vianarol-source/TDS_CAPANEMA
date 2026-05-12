@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import licensesRouter from './routes/licenses.js';
 import statesRouter from './routes/states.js';
+import cnpjRouter from './routes/cnpj.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -13,6 +14,7 @@ app.get('/health', (_, res) => res.json({ status: 'ok', timestamp: new Date().to
 
 app.use('/api/licenses', licensesRouter);
 app.use('/api/states', statesRouter);
+app.use('/api/cnpj', cnpjRouter);
 
 app.use((err, _req, res, _next) => {
   console.error(err.stack);

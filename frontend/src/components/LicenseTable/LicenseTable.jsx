@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ContactPanel from '../ContactPanel/ContactPanel.jsx';
 import './LicenseTable.css';
 
 const STATUS_STYLES = {
@@ -112,6 +113,10 @@ export default function LicenseTable({ licenses, pagination, onPageChange, loadi
                         <div className="detail-desc">
                           <span className="detail-label">Descrição</span>
                           <span className="detail-value">{license.description}</span>
+                        </div>
+                        <div className="detail-contact">
+                          <span className="detail-label">Contato do Responsável</span>
+                          <ContactPanel cnpj={license.cnpj} company={license.company} />
                         </div>
                       </div>
                     </td>
