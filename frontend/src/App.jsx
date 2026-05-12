@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 import Home from './pages/Home.jsx';
 import Results from './pages/Results.jsx';
+import Leads from './pages/Leads.jsx';
 import './App.css';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resultados" element={<Results />} />
+          <Route path="/leads" element={<Leads />} />
         </Routes>
       </main>
     </div>

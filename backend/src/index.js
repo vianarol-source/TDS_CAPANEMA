@@ -4,6 +4,7 @@ import licensesRouter from './routes/licenses.js';
 import statesRouter from './routes/states.js';
 import cnpjRouter from './routes/cnpj.js';
 import carRouter from './routes/car.js';
+import leadsRouter from './routes/leads.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -17,6 +18,7 @@ app.use('/api/licenses', licensesRouter);
 app.use('/api/states', statesRouter);
 app.use('/api/cnpj', cnpjRouter);
 app.use('/api/car', carRouter);
+app.use('/api/leads', leadsRouter);
 
 app.use((err, _req, res, _next) => {
   console.error(err.stack);

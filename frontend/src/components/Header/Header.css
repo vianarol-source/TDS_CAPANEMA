@@ -66,6 +66,19 @@
   color: white;
 }
 
+.nav-link--leads {
+  background: rgba(234,179,8,0.15);
+  color: #fef08a;
+}
+.nav-link--leads:hover {
+  background: rgba(234,179,8,0.25);
+  color: white;
+}
+.nav-link--leads.active {
+  background: rgba(234,179,8,0.3);
+  color: white;
+}
+
 .nav-link.active {
   background: rgba(255,255,255,0.18);
   color: white;

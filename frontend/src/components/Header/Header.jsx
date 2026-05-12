@@ -21,6 +21,9 @@ export default function Header() {
           <Link to="/resultados" className={`nav-link${location.pathname === '/resultados' ? ' active' : ''}`}>
             Resultados
           </Link>
+          <Link to="/leads" className={`nav-link nav-link--leads${location.pathname === '/leads' ? ' active' : ''}`}>
+            🎯 Leads
+          </Link>
         </nav>
       </div>
     </header>
