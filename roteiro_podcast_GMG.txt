@@ -1,0 +1,661 @@
+================================================================================
+    ROTEIRO DE PODCAST — VENDAS DE GRUPOS GERADORES DE ENERGIA
+    "Gerador no Ponto" | Episódio 1: Do Dimensionamento ao Fechamento
+================================================================================
+Formato: dois apresentadores — LUCAS (condutor) e MARINA (especialista técnica
+         e comercial com experiência em vendas de GMG)
+Duração estimada: 45 a 55 minutos
+Gravação: conversa fluida, sem leitura robotizada — use o roteiro como guia
+================================================================================
+
+
+[VINHETA DE ABERTURA — 15 segundos]
+[Som de motor diesel ligando, acelerando e estabilizando. Vinheta musical entra
+em fade e corta limpo.]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 1 — ABERTURA E APRESENTAÇÃO
+[Duração: ~3 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+E aí, pessoal, bem-vindos ao Gerador no Ponto — o podcast para quem vende,
+instala e mantém grupos geradores de energia. Eu sou o Lucas, e hoje a gente
+vai direto ao ponto: tudo que um consultor comercial de GMG precisa saber para
+dimensionar certo, qualificar o cliente certo, e fechar mais vendas.
+
+MARINA:
+E eu sou a Marina. Trabalho com vendas de grupos geradores há mais de dez anos,
+já atendi hospitais, indústrias, fazendas, data centers... Se tem uma aplicação
+de gerador, provavelmente já fui lá vender um.
+
+LUCAS:
+Marina, antes de começar — qual é o maior erro que você vê o pessoal de vendas
+cometer nesse mercado?
+
+MARINA:
+Manda um orçamento sem ter levantado a carga. Sem saber o que o cliente precisa
+alimentar. O vendedor olha para a planta, chuta um número de kVA e manda proposta.
+Aí o gerador chega, não suporta a demanda, e o cliente fica com raiva. Retrabalho,
+reputação comprometida, às vezes até devolução.
+
+LUCAS:
+É exatamente por isso que a gente vai dedicar boa parte desse episódio ao
+dimensionamento. Mas antes, vamos nivelar o básico: o que é de fato um Grupo
+Motor Gerador?
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 2 — O QUE É UM GMG: FUNDAMENTOS PARA O VENDEDOR
+[Duração: ~5 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Explica pra gente como você descreveria um GMG para alguém que nunca viu um.
+
+MARINA:
+Simples: é um motor a diesel acoplado a um gerador elétrico. O motor gira,
+o gerador produz eletricidade. Ponto. O diesel entra, a luz sai.
+Agora, em volta desse núcleo, você tem o sistema completo: o Quadro de
+Transferência Automática — o famoso QTA —, que é a "chave" que percebe que
+a concessionária caiu e transfere a carga para o gerador sem o operador
+precisar fazer nada. Tem o painel de controle, o radiador, o escapamento,
+o silencioso, a base... e o tanque de combustível, que define quanto tempo
+o equipamento aguenta rodando.
+
+LUCAS:
+E por que o vendedor precisa entender essa anatomia toda?
+
+MARINA:
+Porque o cliente muitas vezes acha que "comprou o gerador". Mas o gerador
+sozinho, sem o QTA, sem a cabeação, sem a instalação adequada... ele não
+liga automático. Muita gente só descobre isso quando cai a luz às duas da
+manhã e vai lá acionar o gerador na mão.
+
+LUCAS:
+Então o vendedor que já apresenta o sistema completo desde o início...
+
+MARINA:
+...fecha um ticket maior, entrega mais valor e tem menos problema pós-venda.
+É simples assim.
+
+LUCAS:
+Perfeito. Agora vamos ao ponto que eu sei que você gosta muito: dimensionamento.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 3 — DIMENSIONAMENTO: O GUIA DOS SEIS PASSOS
+[Duração: ~12 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Marina, como você começa um dimensionamento? Qual é o passo zero?
+
+MARINA:
+Passo zero é ouvir o cliente. Antes de abrir qualquer planilha, eu pergunto:
+"Me fala o que você precisa manter funcionando quando a luz cai."
+Aí o cliente começa a listar: iluminação, ar-condicionado, as bombas, o servidor,
+a câmara fria... E é com essa lista que o dimensionamento começa de verdade.
+
+LUCAS:
+Então o passo um é levantar todas as cargas.
+
+MARINA:
+Isso. Você soma as potências de tudo que vai ser alimentado pelo gerador.
+Iluminação de 5 kW, ar-condicionado de 10 kW, bombas de 15 kW, informática de 8 kW...
+Chega a 38 kW, por exemplo. Esse é o seu ponto de partida.
+
+LUCAS:
+Mas nem tudo liga ao mesmo tempo, né?
+
+MARINA:
+Exatamente. Por isso o passo dois é aplicar o fator de simultaneidade.
+Numa instalação comercial típica, nem a iluminação toda, nem todos os ares e
+bombas funcionam 100% ao mesmo tempo. Então a gente usa um fator de 0,8
+como padrão conservador.
+38 kW vezes 0,8 dá 30,4 kW de demanda efetiva. Esse é o número real que
+o gerador precisa atender em condições normais.
+
+LUCAS:
+Mas gerador é especificado em kVA, não em kW. Como faz essa conversão?
+
+MARINA:
+Passo três. A fórmula é simples: kVA igual a kW dividido pelo fator de potência.
+O fator de potência padrão da indústria para geradores diesel é 0,8.
+30,4 kW dividido por 0,8 dá 38 kVA. Simples assim.
+
+LUCAS:
+Mas espera — muitos clientes têm motores elétricos. Bombas, compressores,
+elevadores. Isso muda a conta?
+
+MARINA:
+Muda tudo. E aqui está o erro que mais aparece no campo.
+Quando um motor elétrico parte — no momento que você aciona — ele puxa de três
+a sete vezes mais corrente do que a nominal. Isso dura uns quinze segundos.
+Mas é o suficiente para derrubar um gerador mal dimensionado.
+
+LUCAS:
+Três a sete vezes mais corrente. Isso é passo quatro do dimensionamento.
+
+MARINA:
+Isso. A regra prática é: pegue o maior motor da instalação, multiplique a
+potência dele por três — sendo conservador — e verifique se o gerador suporta
+esse pico. Uma bomba de 7,5 kW pode exigir 22,5 kW só na partida.
+Se o gerador não aguentar esse pico, ele trava, a frequência cai, o motor
+não parte, e o cliente liga reclamando.
+
+LUCAS:
+E como se evita isso?
+
+MARINA:
+Duas formas: dimensionar o gerador para suportar o pico, ou indicar ao cliente
+o uso de soft-starter ou inversor de frequência no motor. O soft-starter
+reduz a corrente de partida drasticamente. Em muitos casos, isso pode inclusive
+reduzir o kVA necessário do gerador — e você ainda agrega valor com o
+conhecimento técnico.
+
+LUCAS:
+Inteligente. Continuando: depois de resolver os motores, qual é o próximo passo?
+
+MARINA:
+Passo cinco: a margem de segurança. Nunca entrego um projeto colado no limite.
+Adiciono entre 20 e 30 por cento em cima do resultado.
+Por quê? Porque o cliente vai colocar mais uma tomada aqui, mais um equipamento
+ali. Porque em dia de calor o gerador não entrega a potência nominal. Porque
+desgaste existe. Essa margem é a reserva técnica — ela protege o cliente e
+protege você de retrabalho.
+No nosso exemplo: 38 kVA vezes 1,25 dá 47,5 kVA. Especifica 50 kVA. Problema resolvido.
+
+LUCAS:
+E tem ainda o passo seis, que você me falou antes de gravar, sobre altitude
+e temperatura.
+
+MARINA:
+Isso é subestimado demais. Um gerador dimensionado no nível do mar, instalado
+a 1.500 metros de altitude, já perde cerca de 5% de potência só pela altitude.
+Se ainda estiver instalado num local com temperatura de ar acima de 25 graus,
+perde mais. Dez, quinze por cento de capacidade a menos.
+Pra quem vende no Planalto Central, em Minas, no interior de São Paulo —
+isso não pode ser ignorado.
+
+LUCAS:
+Então a fórmula resumida para o campo, que a gente pode anotar na agenda:
+kVA final igual a: soma das cargas em kW, vezes fator de demanda, dividido
+por 0,8, vezes 1,25.
+
+MARINA:
+Essa fórmula na cabeça do vendedor vale mais do que qualquer catálogo.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 4 — TIPOS DE CARGA: O QUE TODO VENDEDOR PRECISA SABER
+[Duração: ~6 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Você falou em motores elétricos, compressores... Mas existe uma classificação
+mais formal das cargas. Como o vendedor deve pensar nisso?
+
+MARINA:
+Três categorias. Resistiva, indutiva e não-linear.
+Resistiva é a mais simples: lâmpadas, resistências de aquecimento, chuveiro.
+Fator de potência próximo de 1, partida suave. O gerador ama carga resistiva.
+Não tem surpresa.
+
+LUCAS:
+E a indutiva?
+
+MARINA:
+Indutiva é onde mora o perigo. Motor elétrico, compressor, bomba, ar-condicionado,
+transformador. O fator de potência cai para entre 0,7 e 0,85, e a corrente
+de partida é aquele monstro que a gente falou — de três a sete vezes a nominal.
+A maioria dos erros de dimensionamento acontece aqui. O vendedor esquece de
+perguntar sobre os motores e o gerador chega subdimensionado.
+
+LUCAS:
+E a não-linear?
+
+MARINA:
+Essa é a favorita dos clientes de TI e saúde. Computadores, servidores, UPS,
+inversores, drives de frequência, equipamentos médicos digitais. Esses caras
+têm fator de potência baixíssimo — pode chegar a 0,6 ou menos — e, o que é
+pior, geram harmônicos: distorções na onda elétrica que podem danificar outros
+equipamentos conectados.
+
+LUCAS:
+E o impacto no gerador?
+
+MARINA:
+Você precisa de um gerador com regulador de tensão eletrônico mais robusto
+— o que a gente chama de AVR — e, em casos críticos, um gerador com baixa
+distorção harmônica total, o THD, abaixo de 5%.
+
+LUCAS:
+E como você usa isso na venda?
+
+MARINA:
+Quando chego em um cliente de data center ou hospital e falo sobre THD, sobre
+harmônicos, sobre como a onda do gerador vai interagir com o nobreak deles —
+o técnico do cliente para tudo e me ouve com atenção diferente. Você sai de
+vendedor para consultor. E consultor fecha mais venda, com menos desconto.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 5 — REGIMES DE OPERAÇÃO: STANDBY, PRIME E CONTINUOUS
+[Duração: ~7 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Tópico que pouca gente explica bem na hora da venda: os regimes de operação.
+A ISO 8528 classifica geradores como Standby, Prime e Continuous. Me explica
+isso de um jeito que um vendedor possa repetir para o cliente.
+
+MARINA:
+Vou dar a versão rápida primeiro, porque ela funciona muito bem no campo.
+Só liga quando cai a luz: Standby.
+Funciona muito, mas tem descanso: Prime.
+Nunca para: Continuous.
+É isso. Mas vamos abrir cada um.
+
+LUCAS:
+Vai.
+
+MARINA:
+Standby, ou ESP na sigla em inglês, é o gerador de emergência. Ele só entra
+quando a concessionária falha. Pela norma, pode rodar até 200 horas por ano.
+É o mais vendido no Brasil: hospitais, prédios comerciais, condomínios, telecom.
+O ponto de venda é que custa menos — porque foi projetado para uso eventual.
+Mas atenção: se o cliente está em uma região onde a rede cai toda semana, o
+Standby vai trabalhar mais do que foi projetado. Aí é Prime.
+
+LUCAS:
+E o Prime?
+
+MARINA:
+Prime, ou PRP, é para quem usa o gerador como fonte principal, mas com pausas
+regulares. Horas de operação ilimitadas, mas carga média máxima de 70%.
+E ele ainda aceita 10% de sobrecarga por até uma hora a cada doze horas.
+Aplicação clássica: canteiro de obra no meio do Mato Grosso, fazenda no sertão
+do Nordeste, mineração em área remota. São lugares onde a rede pública não chega
+ou é tão ruim que o gerador é a fonte real de energia.
+
+LUCAS:
+E vender Standby para esse cliente seria um erro grave.
+
+MARINA:
+Gravíssimo. O Standby vai trabalhar além do limite, vai esquentar, vai consumir
+mais combustível, vai falhar antes do tempo. E o cliente vai culpar o equipamento,
+mas o problema foi o dimensionamento de regime errado. Já vi isso acontecer.
+
+LUCAS:
+E o Continuous?
+
+MARINA:
+Continuous, ou COP, é o mais robusto. Projetado para rodar vinte e quatro horas,
+sete dias por semana, trezentos e sessenta e cinco dias por ano, com carga constante.
+Sem sobrecarga, sem pausa. Usinas, plantas industriais 24 horas, plantas de
+mineração contínua.
+É o gerador mais caro da linha — mas quando o cliente precisa dele, ele precisa
+de verdade. Não tem substituto.
+
+LUCAS:
+E existe alguma pegadinha entre Standby e Prime que o vendedor precisa conhecer?
+
+MARINA:
+Existe. O mesmo motor pode ter kVA diferentes dependendo do regime.
+Um gerador de 100 kVA em Standby pode ser 90 kVA em Prime e 80 kVA em Continuous.
+Por quê? Porque o motor foi calibrado para dar o pico no Standby — eventualmente
+— mas não sustenta aquela potência o tempo todo.
+Quando você for comparar proposta com concorrente, confira se estão comparando
+o mesmo regime. É um truque antigo: colocar o kVA do Standby em uma aplicação
+que deveria ser Prime para o preço parecer mais competitivo.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 6 — AS PERGUNTAS QUE QUALIFICAM O CLIENTE
+[Duração: ~6 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Marina, você tem um roteiro de perguntas que usa na visita ao cliente.
+Me conta como funciona.
+
+MARINA:
+Tenho. E a regra número um é: quem pergunta mais, vende mais. Porque quem
+pergunta entende o problema. Quem entende o problema oferece a solução certa.
+E quem oferece a solução certa não precisa brigar por preço.
+
+LUCAS:
+Então começa do começo: qual é a primeira coisa que você quer saber do cliente?
+
+MARINA:
+Qual é a atividade principal dele e o que acontece quando a energia falta.
+Essas duas perguntas já definem tudo: a criticidade, o regime e o nível
+de urgência. Um hospital que responde "a UTI pode ficar sem energia" tem
+uma dor completamente diferente de um escritório que responde "as pessoas
+vão para casa mais cedo".
+
+LUCAS:
+E sobre as cargas, o que você pergunta?
+
+MARINA:
+Peço a lista de equipamentos que precisam continuar funcionando durante
+a falta de energia. Se o cliente não tiver isso pronto, peço acesso ao
+diagrama elétrico ou, pelo menos, à última conta de energia.
+E sempre pergunto: tem motor elétrico na lista? Qual é o maior e quantos kW?
+Tem ar-condicionado central? Tem servidor, equipamento médico, UPS?
+Essas respostas definem se é dimensionamento simples ou se preciso de
+cálculo detalhado de corrente de partida e análise de harmônicos.
+
+LUCAS:
+E a pergunta sobre ROI — custo da hora parada? Como você aborda isso?
+
+MARINA:
+Pergunto diretamente: "Qual é o custo estimado de uma hora de operação
+interrompida para você?" Pode ser em produção perdida, câmara fria destruída,
+hóspede insatisfeito, cirurgia interrompida...
+Quando o cliente responde, ele mesmo justifica a compra. Eu não preciso
+convencê-lo de que o gerador vale o preço — ele já calculou.
+
+LUCAS:
+Essa é boa. E sobre infraestrutura?
+
+MARINA:
+Sempre pergunto sobre o espaço físico, se tem restrição de ruído — em área
+urbana é muito comum precisar de cabine silenciosa —, se já tem QTA instalado,
+qual a tensão da instalação, se a rede é trifásica ou monofásica,
+e qual a autonomia desejada — quantas horas o cliente quer ficar rodando
+sem precisar de abastecimento.
+Essas perguntas evitam surpresa na entrega. Nada pior do que chegar com
+um equipamento e descobrir que o espaço é menor, que não tem acesso de
+caminhão, ou que a tensão é diferente.
+
+LUCAS:
+Para o ouvinte que quer anotar: a gente tem vinte perguntas de qualificação
+documentadas no material completo. Mas essas que a Marina citou já cobrem
+os pontos mais críticos.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 7 — SEGMENTOS: QUEM COMPRA, POR QUÊ E O QUE ESPERA
+[Duração: ~8 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Vamos falar de segmentos. Quem são os principais compradores de GMG e o
+que cada um prioriza na decisão de compra?
+
+MARINA:
+Vou passar pelos seis principais que a gente atende.
+
+Primeiro: saúde. Hospital, clínica, laboratório. Criticidade máxima.
+A norma NBR 13534 exige acionamento automático em até dez segundos após
+a queda da rede. Sem negociação. UTI, centro cirúrgico, pronto-socorro —
+essas áreas não podem ficar sem energia, nunca. O argumento que fecha
+a venda aqui não é preço: é conformidade legal e responsabilidade civil.
+"Se o seu gerador falhar durante uma cirurgia, o hospital responde."
+Isso resolve objeção de preço na hora.
+
+LUCAS:
+E o decisor nesse segmento?
+
+MARINA:
+Geralmente o engenheiro de manutenção traz a especificação técnica, mas
+quem assina é o diretor financeiro ou administrativo. É preciso convencer
+os dois. Com o técnico, fala norma, acionamento, THD, redundância.
+Com o financeiro, fala risco, conformidade regulatória e custo de não ter.
+
+LUCAS:
+Indústria?
+
+MARINA:
+Indústria é variado. Em plantas de produção 24 horas, o regime é Continuous.
+Em indústrias com turnos, Prime. A dor é clara: parada de linha custa dinheiro
+real, em tempo real. Pergunta quanto custa uma hora de parada e o cliente
+responde na hora. A partir daí, o gerador se paga sozinho no argumento.
+Cuidado com os motores aqui: plantas industriais têm motores grandes,
+compressores, pontes rolantes. O dimensionamento precisa ser detalhado.
+
+LUCAS:
+Data center e telecom?
+
+MARINA:
+Esses são os mais exigentes tecnicamente. Cargas não-lineares, servidores,
+nobreaks. Exigem gerador com baixo THD, monitoramento remoto, e o equipamento
+precisa estar pronto para partir mesmo depois de ficar parado por meses.
+Por isso o fuel polishing — o sistema que filtra o diesel do tanque — é
+essencial aqui. Diesel parado contamina. Gerador com diesel contaminado
+não parte na emergência.
+O ciclo de venda é longo — sessenta a cento e oitenta dias — mas o ticket é alto.
+
+LUCAS:
+Comércio?
+
+MARINA:
+Supermercado, shopping, hotel. A dor é imediata e concreta.
+Supermercado: câmara fria parada por quatro horas destrói a mercadoria.
+Hotel: blackout compromete a experiência do hóspede — e vai para o TripAdvisor.
+Aqui tem uma peculiaridade: em área urbana, o gerador precisa de cabine
+acusticamente tratada. Ninguém tolera gerador roncando do lado do restaurante
+do hotel. Isso entra no escopo e no preço.
+
+LUCAS:
+Construção civil?
+
+MARINA:
+Canteiro de obra é Prime puro. O gerador é a fonte de energia da obra
+enquanto a rede não chega. Mobilidade é importante: gerador em trailer
+ou em skid para mover de frente para frente.
+O cliente quer simplicidade de operação — o operador não é técnico —
+e quer saber o consumo de combustível por hora porque isso vai no custo
+da obra.
+
+LUCAS:
+E agronegócio?
+
+MARINA:
+Área rural tem rede instável ou inexistente. Irrigação, câmara fria de
+armazenagem, processamento... O gerador muitas vezes é a espinha dorsal
+da operação. O argumento é direto: a safra não espera.
+O desafio logístico é a manutenção: a propriedade pode estar a duzentos
+quilômetros da assistência técnica. Por isso o cliente valoriza marca
+com rede regional de suporte. Esse detalhe pode definir a venda.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 8 — OBJEÇÕES: AS SEIS MAIS COMUNS E COMO VIRAR O JOGO
+[Duração: ~7 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Hora das objeções. O cliente fala o que e você responde como?
+
+MARINA:
+Vou passar pelas seis que mais aparecem.
+
+LUCAS:
+Começa com a clássica.
+
+MARINA:
+"Está muito caro."
+Resposta: "Entendo. Me ajuda a calcular: quanto custa uma hora de operação
+parada na sua empresa? Se o gerador te evitar três paradas por ano, em quanto
+tempo ele se paga?"
+Quando o cliente faz a conta, ele mesmo percebe que o gerador é barato.
+O problema é que o cliente compara o preço do gerador com zero — que é o
+custo de não ter nenhum gerador. Você precisa mudar o referencial.
+
+LUCAS:
+"A rede aqui raramente cai."
+
+MARINA:
+"Ótimo. Mas quando cai — e eventualmente cai — você está preparado?
+A maioria dos clientes que atendo disse exatamente isso antes do primeiro
+apagão que causou prejuízo. Seguro é exatamente para o que não esperamos."
+Ponto importante: não contradiga o cliente. Valide que a rede dele é estável.
+Mas plante a semente da incerteza.
+
+LUCAS:
+"Vou pensar e te retorno." — essa mata muita venda.
+
+MARINA:
+Mata mesmo. Minha resposta: "Claro, é uma decisão importante. O que ainda
+falta para você se sentir seguro? Existe alguma dúvida que eu possa esclarecer
+agora?" E espero a resposta. Se o cliente não sabe o que falta, ele está
+procrastinando. Se ele fala alguma coisa concreta, você tem uma objeção real
+para trabalhar.
+Nunca saia de uma reunião sem definir o próximo passo com data. "Te mando
+o dimensionamento até sexta" ou "você me confirma a lista de cargas até quarta".
+Sem próximo passo, a venda morre.
+
+LUCAS:
+"Já tenho um gerador antigo que ainda funciona."
+
+MARINA:
+"Entendo. Quando foi a última manutenção completa? Porque gerador antigo
+costuma falhar justamente nas horas em que mais precisamos."
+Aí você abre a conversa para uma revisão técnica. Muitas vezes o custo de
+uma revisão geral fica próximo de uma entrada em equipamento novo — com
+garantia, menor consumo e suporte técnico atual. O cliente percebe sozinho
+que o antigo está vivendo de empréstimo.
+
+LUCAS:
+"Prefiro alugar."
+
+MARINA:
+Aluguel faz sentido para necessidade temporária: obra de seis meses, evento,
+locação emergencial. Para uso permanente, trinta e seis meses de aluguel
+podem custar de uma e meia a duas vezes o valor do equipamento próprio.
+Além disso, com equipamento próprio, o cliente controla a manutenção,
+o combustível, e tem o ativo no balanço.
+Ofereça a simulação financeira comparativa. Coloca no papel, mostra o número.
+Número no papel fecha venda.
+
+LUCAS:
+E a última: "Vou ver com o concorrente."
+
+MARINA:
+Perfeito, você deve mesmo comparar. E eu dou ao cliente um checklist
+para usar nas duas propostas: regime de potência — Standby, Prime
+ou Continuous —, o motor base — quantas horas entre revisões —, a rede
+de assistência técnica regional, e as condições reais da garantia.
+Quando o cliente usa meu checklist para comparar o concorrente,
+eu já estou na cabeça dele como referência. Geralmente volto como preferência.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 9 — OS ERROS QUE CUSTAM A VENDA (E A REPUTAÇÃO)
+[Duração: ~5 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Vamos fechar com os erros. O que você já viu custar venda, cliente e reputação?
+
+MARINA:
+Seis erros. Rápidos e diretos.
+
+Um: mandar orçamento sem levantar as cargas. Já falamos. Nunca chute o kVA.
+Isso é o erro de entrada.
+
+Dois: ignorar a corrente de partida dos motores. Já falamos também. O erro
+técnico mais caro do setor. Um gerador subdimensionado em vinte por cento
+por causa desse cálculo vai falhar no momento crítico.
+
+Três: vender Standby onde deveria ser Prime. Se o cliente usa o gerador como
+fonte principal — obra, fazenda, rede instável — e você vende Standby, o
+equipamento vai falhar antes do tempo. Devolução, reclamação, perda do cliente.
+
+Quatro: esquecer o QTA. O gerador sem Quadro de Transferência Automática
+exige intervenção humana para ligar. Muitos clientes só descobrem isso quando
+cai a luz às duas da manhã. Ofereça sempre o sistema completo: GMG mais QTA
+mais cabeação. Ticket maior, menos problema.
+
+Cinco: não mostrar o custo total de propriedade. O cliente que vê só o preço
+de compra vai para o concorrente mais barato. Mostre o TCO: consumo de
+combustível, manutenção, peças, vida útil. Um motor de qualidade superior
+pode custar vinte e cinco por cento a mais e ser sessenta por cento mais
+barato para manter ao longo da vida útil.
+
+Seis: deixar o cliente sem próximos passos. Já falei isso, mas vale repetir.
+Toda reunião termina com uma ação combinada e uma data. Sem isso, a venda
+fica suspensa no ar e morre no silêncio.
+
+LUCAS:
+Marina, se você tivesse que dar um único conselho para alguém que está
+começando a vender GMG, qual seria?
+
+MARINA:
+Aprenda a dimensionar. Não precisa virar engenheiro, mas precisa saber
+fazer a conta básica: levantar as cargas, converter pra kVA, considerar
+os motores e adicionar a margem. Quem dimensiona bem é percebido como técnico,
+não como vendedor. E técnico fecha mais venda, com mais margem e menos
+retrabalho.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BLOCO 10 — ENCERRAMENTO
+[Duração: ~2 minutos]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUCAS:
+Encerrando aqui o primeiro episódio do Gerador no Ponto.
+Recap rápido do que a gente cobriu hoje:
+
+A base do GMG: motor diesel, alternador, QTA — venda sempre o sistema completo.
+Os seis passos do dimensionamento — da lista de cargas à margem de segurança.
+Os três tipos de carga: resistiva, indutiva e não-linear.
+Os três regimes da ISO 8528: Standby, Prime e Continuous.
+As vinte perguntas de qualificação.
+Os seis segmentos — saúde, indústria, data center, comércio, construção,
+agronegócio — cada um com sua dor e seu decisor.
+As seis objeções e como virar o jogo.
+E os seis erros que custam a venda.
+
+MARINA:
+Material completo disponível para download para quem quiser aprofundar.
+E se tiver dúvida técnica específica, traz para o próximo episódio.
+
+LUCAS:
+No próximo episódio a gente vai entrar fundo em paralelismo de geradores:
+quando indicar, como dimensionar, e como vender um projeto de redundância
+para clientes de alta criticidade.
+Até lá — gerador no ponto, venda fechada.
+
+[VINHETA DE ENCERRAMENTO — fade out com som de motor estabilizando]
+
+
+================================================================================
+NOTAS DE PRODUÇÃO
+================================================================================
+
+DURAÇÃO TOTAL ESTIMADA: 45 a 55 minutos
+
+DICAS PARA GRAVAÇÃO:
+  - Lucas conduz o ritmo e faz perguntas que o ouvinte teria.
+  - Marina responde sempre com exemplos concretos antes do conceito abstrato.
+  - Evitar leitura direta: use o roteiro como guia, fale naturalmente.
+  - Pausas curtas (1 a 2 segundos) depois de cada conceito-chave facilitam
+    a absorção do ouvinte.
+  - Momentos de humor leve são bem-vindos — este é um podcast técnico,
+    não uma aula.
+
+CAPÍTULOS SUGERIDOS PARA PLATAFORMAS (Spotify, YouTube):
+  00:00 — Abertura e apresentação
+  03:00 — O que é um GMG
+  08:00 — Dimensionamento: os 6 passos
+  20:00 — Tipos de carga
+  26:00 — Regimes ISO 8528
+  33:00 — Perguntas de qualificação
+  39:00 — Segmentos de mercado
+  47:00 — Objeções e respostas
+  54:00 — Erros que custam a venda
+  59:00 — Encerramento
+
+PRÓXIMOS EPISÓDIOS SUGERIDOS:
+  Ep. 2: Paralelismo de Geradores — quando e como vender redundância
+  Ep. 3: Manutenção Preventiva como argumento de venda e fidelização
+  Ep. 4: Como elaborar uma proposta técnica que fecha
+  Ep. 5: Normas ABNT na prática — como usar regulamentação para vender
+
+================================================================================

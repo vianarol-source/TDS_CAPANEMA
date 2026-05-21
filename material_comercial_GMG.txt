@@ -1,0 +1,589 @@
+================================================================================
+      MATERIAL COMERCIAL — EQUIPE DE VENDAS DE GRUPOS GERADORES DE ENERGIA
+================================================================================
+Referência técnica para consultores comerciais | Versão 1.0 | Maio/2026
+================================================================================
+
+
+ÍNDICE
+------
+1. O que é um Grupo Motor Gerador (GMG)
+2. Como Dimensionar um GMG — Guia Passo a Passo
+3. Tipos de Carga e seu Impacto no Dimensionamento
+4. Regimes de Operação (ISO 8528)
+5. Perguntas de Qualificação do Cliente
+6. Segmentos de Mercado e Requisitos por Setor
+7. Normas Técnicas por Segmento
+8. Principais Objeções e Como Responder
+9. Argumentos de Valor por Perfil de Cliente
+10. Erros Comuns que Custam a Venda
+
+
+================================================================================
+1. O QUE É UM GRUPO MOTOR GERADOR (GMG)
+================================================================================
+
+Um Grupo Motor Gerador é a combinação de um motor de combustão interna (a diesel
+na grande maioria dos casos) com um gerador elétrico acoplado. Juntos, eles
+convertem energia mecânica (diesel) em energia elétrica.
+
+Componentes principais:
+  - Motor a diesel (prime mover)
+  - Alternador (gerador elétrico)
+  - Quadro de Transferência Automática (QTA) — chave de comutação rede/gerador
+  - Painel de controle
+  - Sistema de arrefecimento (radiador)
+  - Sistema de escapamento
+  - Tanque de combustível (interno ou externo)
+  - Silencioso (atenuação acústica)
+  - Base e amortecedores de vibração
+
+Aplicação típica: fornecer energia elétrica quando a concessionária (rede pública)
+falha, ou como fonte primária/contínua em locais sem acesso à rede.
+
+
+================================================================================
+2. COMO DIMENSIONAR UM GMG — GUIA PASSO A PASSO
+================================================================================
+
+O dimensionamento correto é o ponto mais crítico da venda. Um gerador subdimensionado
+trava e deixa o cliente na mão. Um superdimensionado encarece e desperdiça.
+Domine esse processo e você ganha a confiança do cliente.
+
+
+PASSO 1 — LEVANTAR TODAS AS CARGAS QUE SERÃO ALIMENTADAS
+---------------------------------------------------------
+Pergunte ao cliente quais equipamentos devem continuar funcionando durante a
+falta de energia. Some as potências de todos eles.
+
+  Exemplo:
+    - Iluminação: 5 kW
+    - Ar-condicionado: 10 kW
+    - Bombas hidráulicas: 15 kW
+    - Equipamentos de informática: 8 kW
+    - Total bruto: 38 kW
+
+
+PASSO 2 — APLICAR O FATOR DE DEMANDA / SIMULTANEIDADE
+------------------------------------------------------
+Nem todas as cargas funcionam ao mesmo tempo. Use um fator de simultaneidade
+(geralmente entre 0,6 e 0,9, dependendo da operação).
+
+  Fator 0,8 é o mais usado como padrão conservador:
+    38 kW × 0,8 = 30,4 kW de demanda efetiva
+
+
+PASSO 3 — CONVERTER kW PARA kVA (FATOR DE POTÊNCIA)
+-----------------------------------------------------
+Geradores são especificados em kVA. O fator de potência (FP) padrão da indústria
+para geradores a diesel é 0,8.
+
+  Fórmula: kVA = kW / FP
+  Exemplo:  kVA = 30,4 / 0,8 = 38 kVA
+
+
+PASSO 4 — ANALISAR CORRENTE DE PARTIDA DE MOTORES ELÉTRICOS
+------------------------------------------------------------
+Motores elétricos (bombas, compressores, elevadores) puxam de 3 a 7 vezes mais
+corrente no momento da partida (corrente de inrush). O gerador precisa aguentar
+esse pico sem cair a frequência ou tensão.
+
+Regra prática: se houver motor elétrico, considere o maior motor separadamente.
+Multiplique a potência do maior motor por um fator de 2,5 a 3 e garanta que o
+gerador suporte esse pico adicional.
+
+  Exemplo: bomba de 7,5 kW → pico de partida = 7,5 × 3 = 22,5 kW momentâneos
+  → O gerador precisa suportar esse pico por até 15 segundos.
+
+
+PASSO 5 — ACRESCENTAR MARGEM DE SEGURANÇA (RESERVA TÉCNICA)
+------------------------------------------------------------
+Sempre adicione entre 20% e 30% sobre o resultado final. Motivos:
+  - Crescimento futuro da instalação
+  - Eficiência do gerador em condições reais (temperatura, altitude, desgaste)
+  - Cargas não mapeadas inicialmente
+
+  Exemplo: 38 kVA × 1,25 = 47,5 kVA → especifique 50 kVA
+
+
+PASSO 6 — CONSIDERAR ALTITUDE E TEMPERATURA
+--------------------------------------------
+A potência de um gerador cai com:
+  - Altitude: -1% por 100 m acima de 1.000 m
+  - Temperatura: -1% por grau acima de 25°C no ar de admissão
+
+  Exemplo: instalação a 1.500 m de altitude + 35°C → perda de ~15% de potência
+  → Compensar na especificação final.
+
+
+FÓRMULA RESUMIDA PARA CAMPO:
+  kVA final = (Soma das cargas em kW × Fator de demanda / 0,8) × 1,25
+
+
+================================================================================
+3. TIPOS DE CARGA E SEU IMPACTO NO DIMENSIONAMENTO
+================================================================================
+
+Saber identificar o tipo de carga é fundamental para dimensionar com precisão
+e mostrar competência técnica ao cliente.
+
+
+CARGA RESISTIVA
+  O que é: carga que converte energia elétrica diretamente em calor ou luz.
+  Exemplos: resistências elétricas, lâmpadas incandescentes, aquecedores.
+  Comportamento: FP próximo de 1,0. Partida suave, sem pico.
+  Impacto no gerador: o mais simples. Use a potência direta.
+
+
+CARGA INDUTIVA
+  O que é: cargas com bobinas, que criam campo magnético.
+  Exemplos: motores elétricos, compressores, bombas, transformadores, ACs.
+  Comportamento: FP típico entre 0,7 e 0,85. Corrente de partida de 3 a 7x.
+  Impacto no gerador: exige superdimensionamento ou uso de soft-starter/inversor.
+  ATENÇÃO: este é o maior causador de erros de dimensionamento no campo.
+
+
+CARGA NÃO-LINEAR (ELETRÔNICA)
+  O que é: equipamentos com fontes chaveadas e eletrônica de potência.
+  Exemplos: computadores, servidores, UPS, inversores, drives de frequência,
+            equipamentos médicos digitais.
+  Comportamento: geram harmônicos que distorcem a onda do gerador.
+                 FP pode ser baixíssimo (0,6 ou menos).
+  Impacto no gerador: exige gerador com regulador de tensão eletrônico (AVR)
+                      mais robusto e, em alguns casos, gerador de baixa
+                      distorção harmônica (THD < 5%).
+  PONTO DE VENDA: mencionar isso ao cliente de TI/data center demonstra
+                  conhecimento e agrega valor à sua proposta.
+
+
+================================================================================
+4. REGIMES DE OPERAÇÃO (ISO 8528)
+================================================================================
+
+A norma ISO 8528 classifica os geradores por regime de uso. Vender o regime
+errado é erro grave — compromete a garantia e a durabilidade do equipamento.
+
+
+STANDBY (ESP) — Potência de Emergência
+  Uso: apenas quando a rede pública falha. Não pode ser a fonte principal.
+  Limite de operação: até 200 horas/ano.
+  Carga: variável (0 a 100%).
+  Aplicação típica: hospitais, edificações comerciais, residências, telecom.
+  Ponto de venda: menor custo, ideal para quem só precisa de backup.
+  ATENÇÃO: não recomendado para áreas onde a rede é muito instável ou onde
+           há cortes frequentes e longos.
+
+
+PRIME (PRP) — Potência Principal/Ilimitada
+  Uso: fonte primária de energia com uso frequente, mas com pausas regulares.
+  Limite de operação: horas ilimitadas, mas carga média máxima de 70%.
+  Capacidade de sobrecarga: suporta 110% por até 1 hora a cada 12h.
+  Aplicação típica: canteiros de obras, mineração, fazendas, zonas sem rede.
+  Ponto de venda: ideal para quem depende do gerador como fonte principal
+                  em locais remotos.
+
+
+CONTINUOUS (COP) — Potência Contínua
+  Uso: operação ininterrupta 24h/7 dias, 365 dias ao ano.
+  Carga: constante, sem variação significativa.
+  Sem capacidade de sobrecarga.
+  Aplicação típica: usinas, parques industriais 24h, plantas de mineração.
+  Ponto de venda: máxima confiabilidade e durabilidade. O gerador mais robusto
+                  da linha. Custo-benefício em operações críticas contínuas.
+
+
+RESUMO RÁPIDO PARA O VENDEDOR:
+  Só liga quando cai a luz → STANDBY
+  Funciona muito, mas tem descanso → PRIME
+  Nunca para → CONTINUOUS
+
+
+================================================================================
+5. PERGUNTAS DE QUALIFICAÇÃO DO CLIENTE
+================================================================================
+
+Use essas perguntas para entender a necessidade real antes de propor qualquer
+solução. Quem pergunta mais, vende mais.
+
+
+PERGUNTAS SOBRE A APLICAÇÃO:
+  1. Qual é a sua atividade principal? (produção, saúde, TI, comércio, outro)
+  2. O que acontece com sua operação quando a energia falta?
+     (perda de produção, risco de segurança, perda de dados, prejuízo direto)
+  3. Já teve situações de falta de energia? Com que frequência e duração?
+  4. Qual é o custo estimado de cada hora parada? (cria urgência e justifica ROI)
+  5. A instalação é nova ou vai substituir um gerador existente?
+
+PERGUNTAS SOBRE AS CARGAS:
+  6. Quais equipamentos precisam funcionar durante a falta de energia?
+     (peça a lista completa ou acesso ao diagrama elétrico)
+  7. Tem motores elétricos na lista? De quanto kW o maior?
+     (motor de bombas, compressores, elevadores, AVAC)
+  8. Tem equipamentos eletrônicos sensíveis? (servidores, UTI, equipamentos médicos)
+  9. A instalação usa sistema de ar-condicionado central?
+  10. Há previsão de crescimento da planta nos próximos 3 a 5 anos?
+
+PERGUNTAS SOBRE OPERAÇÃO:
+  11. O gerador será usado só para emergência ou como fonte principal também?
+  12. Quanto tempo por dia/mês o gerador precisará operar?
+  13. Há operadores treinados no local? Ou o sistema precisa ser 100% automático?
+  14. Qual a distância da instalação para manutenção? (logística de atendimento)
+
+PERGUNTAS SOBRE INFRAESTRUTURA:
+  15. Há espaço físico definido para instalação? (tamanho, cobertura, acesso)
+  16. A instalação é em área urbana com restrição de ruído?
+      (definirá necessidade de cabine silenciosa)
+  17. Já tem o Quadro de Transferência Automática (QTA) instalado?
+  18. Qual é o volume de tanque de combustível disponível?
+      (autonomia desejada em horas)
+  19. Há acesso a rede trifásica ou apenas monofásica?
+  20. Qual é a tensão da instalação? (127/220V, 220/380V, 13,8kV)
+
+
+================================================================================
+6. SEGMENTOS DE MERCADO E REQUISITOS POR SETOR
+================================================================================
+
+
+SAÚDE — HOSPITAIS, CLÍNICAS E LABORATÓRIOS
+-------------------------------------------
+Nível de criticidade: MÁXIMO
+Regime recomendado: STANDBY (com teste mensal obrigatório)
+
+Requisitos e características:
+  - Acionamento automático em até 10 segundos após a queda da rede (ABNT NBR 13534)
+  - Áreas críticas obrigatórias: UTI, centro cirúrgico, pronto-socorro, banco de sangue,
+    sala de raios-X, laboratórios
+  - Autonomia mínima: 24 horas (tanque externo geralmente necessário)
+  - Sistema de dupla redundância em hospitais de grande porte
+  - Gerador de baixo THD para equipamentos eletromédicos sensíveis
+  - Manutenção preventiva documentada e rastreável (exigência regulatória)
+  - Testes mensais em carga obrigatórios
+
+Argumento de venda:
+  "Seu hospital tem obrigação legal de manter energia ininterrupta nas áreas
+   críticas. Uma falha no gerador em momento de emergência pode custar vidas
+   e responder judicialmente. Nosso GMG atende integralmente à ABNT NBR 13534."
+
+Decisor típico: engenheiro de manutenção + diretor financeiro/administrativo
+Ciclo de venda: 30 a 90 dias (processo licitatório em hospitais públicos)
+
+
+INDÚSTRIA — FÁBRICAS E PLANTAS DE PRODUÇÃO
+-------------------------------------------
+Nível de criticidade: ALTO a MÁXIMO (depende do tipo de produção)
+Regime recomendado: PRIME ou CONTINUOUS (produção 24h)
+
+Requisitos e características:
+  - Cargas indutivas dominantes (motores, compressores, pontes rolantes)
+  - Atenção redobrada à corrente de partida dos maiores motores
+  - Possibilidade de paralelismo de geradores para plantas maiores
+  - Controle de transferência inteligente para não interromper processos contínuos
+  - Automação integrada ao SCADA/CLP da planta em grandes instalações
+  - Tanque externo para autonomia estendida (48h a 72h em indústrias críticas)
+  - Gerador à prova de intempéries em instalações a céu aberto
+
+Argumento de venda:
+  "Cada hora de parada não planejada na sua linha custa R$ X em produção perdida.
+   Com nosso GMG dimensionado para sua demanda de pico, a transferência acontece
+   em milissegundos e a linha não para."
+
+Decisor típico: gerente de manutenção + gerente de operações + diretoria
+Ciclo de venda: 45 a 120 dias
+
+
+TELECOMUNICAÇÕES E DATA CENTERS
+--------------------------------
+Nível de criticidade: MÁXIMO
+Regime recomendado: STANDBY (com UPS complementando o intervalo de acionamento)
+
+Requisitos e características:
+  - Cargas não-lineares (servidores, switches, storages, UPS)
+  - Baixíssimo THD exigido (< 5%) para não comprometer os equipamentos
+  - Acionamento deve ocorrer dentro da janela de autonomia da UPS (5 a 30 min)
+  - Autonomia mínima de 24h (exigência de normas como TIA-942 para data centers)
+  - Sistema N+1 ou 2N de redundância para Tier III e IV
+  - Gerador com controle de carga preciso para sincronizar com a UPS
+  - Monitoramento remoto 24h/7 indispensável
+  - Tanque com fuel polishing (filtro anticontaminação de combustível) para
+    longos períodos sem uso
+
+Argumento de venda:
+  "Um data center Tier III não pode ter downtime. Seu gerador precisa estar
+   pronto para ligar a qualquer momento, mesmo depois de ficar parado por meses.
+   Nosso sistema inclui monitoramento em tempo real e manutenção preventiva
+   programada para garantir a disponibilidade que o seu nível de serviço exige."
+
+Decisor típico: gerente de TI + gerente de facilities + diretor de operações
+Ciclo de venda: 60 a 180 dias
+
+
+COMÉRCIO — SHOPPINGS, SUPERMERCADOS, HOTÉIS
+--------------------------------------------
+Nível de criticidade: ALTO
+Regime recomendado: STANDBY
+
+Requisitos e características:
+  - Iluminação, ar-condicionado e refrigeração são as cargas dominantes
+  - Cabine acusticamente isolada (restrição de ruído em área urbana)
+  - Possibilidade de dimensionar por zonas (carga parcial vs. carga total)
+  - Atenção ao pico de partida dos compressores de refrigeração e AVAC
+  - Quadro de transferência seletiva (não necessariamente tudo ligado)
+  - Inspeção visual de estética (o equipamento será visível para clientes?)
+
+Argumento de venda:
+  "Num supermercado, 4 horas sem energia podem destruir toda a câmara fria.
+   Num hotel, a experiência do hóspede fica comprometida ao primeiro minuto
+   de blackout. Nosso gerador parte em até 10 segundos e mantém sua operação
+   sem que seus clientes percebam a diferença."
+
+Decisor típico: gerente de facilities + diretor financeiro
+Ciclo de venda: 30 a 60 dias
+
+
+CONSTRUÇÃO CIVIL E OBRAS
+-------------------------
+Nível de criticidade: MÉDIO
+Regime recomendado: PRIME
+
+Requisitos e características:
+  - Fonte primária de energia no canteiro (sem rede disponível)
+  - Cargas variáveis: ferramentas, iluminação, elevadores, betoneiras
+  - Alta mobilidade: gerador em trailer ou skid para deslocamento
+  - Resistência a poeira, umidade e condições severas (proteção IP)
+  - Simplicidade de operação (operadores sem treinamento técnico avançado)
+  - Consumo de combustível e custo operacional são argumentos de decisão
+
+Argumento de venda:
+  "Na obra, o gerador não para a obra. Nosso GMG no regime PRIME aguenta
+   o ritmo de uso intenso do canteiro, com tanque dimensionado para o turno
+   completo de trabalho e partida elétrica para facilitar a vida do operador."
+
+Decisor típico: gerente de obras + diretor de engenharia
+Ciclo de venda: 15 a 45 dias
+
+
+AGRONEGÓCIO E ÁREA RURAL
+-------------------------
+Nível de criticidade: MÉDIO a ALTO
+Regime recomendado: PRIME ou CONTINUOUS
+
+Requisitos e características:
+  - Rede elétrica instável ou inexistente em propriedades remotas
+  - Irrigação, armazenagem refrigerada e processamento são cargas críticas
+  - Alta demanda de motores de bombeamento (carga indutiva)
+  - Autonomia estendida: tanques de 500 a 2.000 litros comuns
+  - Proteção contra umidade, calor e poeira (ambiente aberto)
+  - Assistência técnica local pode ser limitada — valorizar marcas com rede
+    de suporte regional
+
+Argumento de venda:
+  "A safra não espera. Uma falha no sistema de irrigação ou na câmara fria
+   pode comprometer meses de trabalho. Nosso gerador foi projetado para
+   trabalhar em regime pesado, longe da cidade, com o mínimo de manutenção
+   e máxima autonomia."
+
+Decisor típico: proprietário rural / gerente de fazenda
+Ciclo de venda: 15 a 45 dias
+
+
+================================================================================
+7. NORMAS TÉCNICAS POR SEGMENTO
+================================================================================
+
+Dominar as normas relevantes por setor é um diferencial técnico que inspira
+confiança e fecha vendas consultivas.
+
+ABNT NBR ISO 8528     — Grupos geradores de corrente alternada (norma geral).
+                         Define regimes Standby, Prime e Continuous.
+
+ABNT NBR 5410         — Instalações elétricas de baixa tensão. Base de toda
+                         instalação no Brasil.
+
+ABNT NBR 13534        — Instalações elétricas em estabelecimentos assistenciais
+                         de saúde (hospitais). OBRIGATÓRIA para o setor de saúde.
+                         Define acionamento em até 10 segundos, redundâncias e
+                         áreas críticas.
+
+ABNT NBR 10898        — Sistemas de iluminação de emergência. Complementar à
+                         instalação de geradores em edificações.
+
+NR-10 (MTE)           — Segurança em instalações elétricas. Exige documentação
+                         e profissionais habilitados para instalar e operar GMGs.
+
+TIA-942               — Padrão internacional para data centers.
+                         Define requisitos de Tier I a IV, incluindo geração
+                         e redundância de energia.
+
+ANVISA RDC 50         — Regulamento técnico para planejamento, programação,
+                         elaboração e avaliação de projetos físicos de EAS.
+                         Referencia requisitos de energia de emergência.
+
+
+================================================================================
+8. PRINCIPAIS OBJEÇÕES E COMO RESPONDER
+================================================================================
+
+
+OBJEÇÃO 1: "Está muito caro."
+Resposta:
+  "Entendo. Vamos calcular juntos o custo de uma hora de parada não planejada
+   na sua operação. Se você perder R$ X por hora e o gerador te evitar 3 paradas
+   por ano, o retorno do investimento acontece em menos de 12 meses. E o risco
+   de não ter o equipamento continua lá, crescendo a cada apagão."
+
+
+OBJEÇÃO 2: "A rede aqui é estável, raramente cai."
+Resposta:
+  "Ótimo! Mas quando cai — e eventualmente cai — você está preparado?
+   A maioria dos nossos clientes falou a mesma coisa antes do primeiro apagão
+   que causou prejuízo. O custo da falta de energia em um único evento pode
+   superar em muito o investimento no gerador. Proteção é exatamente para o
+   que não esperamos."
+
+
+OBJEÇÃO 3: "Vou pensar e te retorno."
+Resposta:
+  "Claro, é uma decisão importante. Só quero confirmar: o que ainda falta para
+   você se sentir seguro na decisão? Existe alguma dúvida técnica que eu possa
+   esclarecer hoje? [aguarde resposta] Posso preparar uma proposta detalhada
+   com o dimensionamento completo para facilitar sua análise interna."
+
+
+OBJEÇÃO 4: "Já tenho um gerador antigo que ainda funciona."
+Resposta:
+  "Entendo. Quando foi a última manutenção completa? Geradores com mais de
+   [X] anos costumam apresentar falhas justamente nas horas em que mais precisamos.
+   O custo de uma revisão geral muitas vezes fica próximo de uma entrada em um
+   equipamento novo com garantia, menor consumo e suporte técnico atual."
+
+
+OBJEÇÃO 5: "Prefiro alugar ao invés de comprar."
+Resposta:
+  "Faz sentido para necessidades temporárias. Mas para uso permanente, o aluguel
+   por 36 meses pode custar de 1,5 a 2 vezes o valor de um equipamento próprio.
+   Além disso, com equipamento próprio você controla a manutenção, o combustível
+   e tem o ativo no balanço. Posso mostrar a simulação financeira comparativa?"
+
+
+OBJEÇÃO 6: "Vou ver com o concorrente."
+Resposta:
+  "Ótimo, você deve mesmo comparar! Quando for analisar, veja além do preço:
+   compare o regime de potência (Standby vs Prime vs Continuous), o motor base
+   (horas de vida útil entre revisões), a rede de assistência técnica regional
+   e as condições reais de garantia. Posso te dar um checklist comparativo para
+   você usar nas duas propostas?"
+
+
+================================================================================
+9. ARGUMENTOS DE VALOR POR PERFIL DE CLIENTE
+================================================================================
+
+
+CLIENTE ORIENTADO A CUSTO (quer o menor preço):
+  - Calcule o custo por hora de parada e compare com a parcela mensal do gerador
+  - Mostre o custo de uma única revisão num gerador barato vs. a durabilidade
+    do equipamento de qualidade
+  - Ofereça financiamento com parcelas mensais menores que o custo de um apagão
+  - Destaque o consumo de combustível: geradores mais eficientes economizam
+    no longo prazo
+
+CLIENTE ORIENTADO A RISCO (prioriza segurança):
+  - Evidencie o impacto regulatório: multas, sanções, perda de licença operacional
+  - Em saúde: responsabilidade legal em caso de falha durante procedimento
+  - Em industria: perdas de produção, matéria-prima, retrabalho
+  - Proponha manutenção preventiva contratada: tranquilidade total
+
+CLIENTE ORIENTADO A TECNOLOGIA (quer o melhor):
+  - Painel de controle digital com monitoramento remoto (telemetria)
+  - Alarmes por SMS/e-mail em caso de falha ou falta de combustível
+  - Protocolo CANBUS/Modbus para integração com SCADA e BMS
+  - Gerador de baixíssimo THD para proteção de equipamentos eletrônicos sensíveis
+  - Opção de paralelismo de grupos para redundância e crescimento modular
+
+CLIENTE ORIENTADO A RELACIONAMENTO (confia em quem indica):
+  - Use referências de clientes do mesmo setor
+  - Proponha visita técnica a uma instalação similar já entregue
+  - Enfatize o suporte pós-venda: contrato de manutenção, disponibilidade
+    da equipe técnica, tempo de resposta garantido em contrato
+
+
+================================================================================
+10. ERROS COMUNS QUE CUSTAM A VENDA
+================================================================================
+
+  1. PROPOR SEM LEVANTAR AS CARGAS
+     Nunca mande um orçamento com kVA estimado "a olho". Peça a relação de cargas
+     ou, no mínimo, a conta de energia e o diagrama elétrico simplificado.
+     Um dimensionamento fundamentado fecha mais e gera menos retrabalho.
+
+  2. IGNORAR A CORRENTE DE PARTIDA DOS MOTORES
+     Esse é o erro técnico mais caro do setor. Um gerador subdimensionado em
+     20% por falta desse cálculo vai falhar no momento crítico.
+
+  3. VENDER STANDBY ONDE DEVERIA SER PRIME
+     Se o cliente precisa do gerador como fonte primária (obra, área rural, rede
+     instável), vender Standby vai causar falha prematura e devolução com prejuízo.
+
+  4. ESQUECER A TRANSFERÊNCIA AUTOMÁTICA
+     O GMG sem QTA (Quadro de Transferência Automática) exige intervenção humana
+     para ligar. Muitos clientes só descobrem isso depois. Ofereça o sistema
+     completo desde o início.
+
+  5. NÃO APRESENTAR O CUSTO TOTAL DE PROPRIEDADE
+     O cliente que vê só o preço de compra compara apenas com o concorrente mais
+     barato. Mostre o TCO (Total Cost of Ownership): consumo de combustível,
+     manutenção, peças, vida útil. Um motor de qualidade superior pode ser
+     25% mais caro e 60% mais barato para manter.
+
+  6. DEIXAR O CLIENTE SEM PRÓXIMOS PASSOS
+     Ao final de cada reunião, defina a ação seguinte: "vou te enviar o dimensionamento
+     até sexta" ou "você me confirma a lista de cargas até quarta". Vendas sem
+     próximos passos claros morrem no follow-up.
+
+
+================================================================================
+FÓRMULAS DE REFERÊNCIA RÁPIDA
+================================================================================
+
+  kVA = kW / FP (FP padrão = 0,8 para geradores diesel)
+  kW  = kVA × FP
+  kVA final = (Σ cargas em kW × Fator de demanda / 0,8) × 1,25
+  Corrente de partida motor ≈ potência nominal × 3 a 7
+
+  Perda por altitude: -1% a cada 100 m acima de 1.000 m
+  Perda por temperatura: -1% a cada 1°C acima de 25°C
+
+  Conversões úteis:
+    1 kVA = 0,8 kW (FP 0,8)
+    1 CV  = 0,736 kW
+    1 kW  = 1,36 CV
+
+
+================================================================================
+TABELA DE REFERÊNCIA: APLICAÇÃO × REGIME × CRITICIDADE
+================================================================================
+
+Segmento            | Regime      | Criticidade | Autonomia mínima | Norma chave
+--------------------|-------------|-------------|------------------|------------
+Hospital/Clínica    | Standby     | Máxima      | 24h              | NBR 13534
+Data Center         | Standby     | Máxima      | 24h              | TIA-942
+Indústria 24h       | Continuous  | Máxima      | 48-72h           | ISO 8528
+Indústria turnos    | Prime       | Alta        | 24h              | ISO 8528
+Telecom             | Standby     | Máxima      | 24h              | ISO 8528
+Shopping/Hotel      | Standby     | Alta        | 12-24h           | NBR 5410
+Supermercado        | Standby     | Alta        | 12h              | NBR 5410
+Obra/Canteiro       | Prime       | Média       | Por turno        | NR-10
+Agronegócio         | Prime       | Média/Alta  | 24-48h           | NBR 5410
+Edif. residencial   | Standby     | Baixa/Média | 8-12h            | NBR 5410
+
+
+================================================================================
+Fontes de referência técnica:
+  - ABNT NBR ISO 8528 (regimes de operação de geradores)
+  - ABNT NBR 13534 (instalações elétricas em saúde)
+  - ABNT NBR 5410 (instalações elétricas de baixa tensão)
+  - Dynamo Treinamentos — dynamotreinamentos.com
+  - Luminus Geradores — luminusgeradores.com.br
+  - Power Geradores — powergeradores.com.br
+================================================================================
