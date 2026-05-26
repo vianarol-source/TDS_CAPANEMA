@@ -1,0 +1,7 @@
+// Função com retorno ( Usa 'return' para enviar um valor de volta);
+// Função em variáveol ( Função anônima armazenada em variável);
+// Função como parâmetro ( Permite comportamento dinâmico(callbacks));
+// Função que retorna função (Gera funções personalizadas, cenceito de closure);
+
+
+
