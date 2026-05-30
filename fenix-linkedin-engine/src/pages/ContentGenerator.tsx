@@ -11,6 +11,8 @@ import {
   Sparkles,
   AlertCircle,
   BookOpen,
+  Bot,
+  Cpu,
 } from 'lucide-react'
 import {
   ContentFormData,
@@ -80,6 +82,7 @@ export default function ContentGenerator() {
   }, [location.state])
   const [generated, setGenerated] = useState<{ content: string; hashtags: string[] } | null>(null)
   const [isGenerating, setIsGenerating] = useState(false)
+  const [generationSource, setGenerationSource] = useState<'ai' | 'template' | null>(null)
   const [copied, setCopied] = useState(false)
   const [savedId, setSavedId] = useState<string | null>(null)
   const [editableContent, setEditableContent] = useState('')
@@ -92,22 +95,46 @@ export default function ContentGenerator() {
     setShowSaveSuccess(false)
   }
 
-  function handleGenerate() {
+  async function handleGenerate() {
     if (!form.theme.trim()) return
     setIsGenerating(true)
     setSavedId(null)
     setShowSaveSuccess(false)
 
-    // Simulate async generation (ready for real AI API)
+    let result: { content: string; hashtags: string[] }
+    let source: 'ai' | 'template' = 'template'
+
+    try {
+      const response = await fetch('/api/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      if (response.ok) {
+        const data = await response.json() as { content: string; hashtags: string[]; source?: string }
+        if (data.content && Array.isArray(data.hashtags)) {
+          result = { content: data.content, hashtags: data.hashtags }
+          source = 'ai'
+        } else {
+          result = generateContent(form)
+        }
+      } else {
+        // API not configured or error — fall back to template engine
+        result = generateContent(form)
+      }
+    } catch {
+      // Network error or API unavailable — fall back to template engine
+      result = generateContent(form)
+    }
+
+    setGenerated(result)
+    setGenerationSource(source)
+    setEditableContent(result.content)
+    setIsGenerating(false)
     setTimeout(() => {
-      const result = generateContent(form)
-      setGenerated(result)
-      setEditableContent(result.content)
-      setIsGenerating(false)
-      setTimeout(() => {
-        resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }, 100)
-    }, 800)
+      resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 100)
   }
 
   function handleCopy() {
@@ -350,12 +377,21 @@ export default function ContentGenerator() {
               {/* Content card */}
               <div className="card">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                     <span className="text-sm font-semibold text-navy-700">Conteúdo Gerado</span>
                     <span className="badge bg-gold-50 text-gold-700 border-gold-200 text-xs">
                       {CONTENT_TYPE_LABELS[form.contentType]}
                     </span>
+                    {generationSource === 'ai' ? (
+                      <span className="badge bg-purple-50 text-purple-700 border-purple-200 text-xs flex items-center gap-1">
+                        <Bot className="w-3 h-3" /> IA (Claude)
+                      </span>
+                    ) : (
+                      <span className="badge bg-gray-50 text-gray-500 border-gray-200 text-xs flex items-center gap-1">
+                        <Cpu className="w-3 h-3" /> Template
+                      </span>
+                    )}
                   </div>
                   <div className="flex items-center gap-2">
                     {showSaveSuccess && (

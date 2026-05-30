@@ -9,7 +9,8 @@ import {
   X,
   ChevronRight,
 } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { getAllPosts } from '../utils/storage'
 
 const navItems = [
   { to: '/', label: 'Início', icon: Home, exact: true },
@@ -20,7 +21,12 @@ const navItems = [
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [postCount, setPostCount] = useState(0)
   const location = useLocation()
+
+  useEffect(() => {
+    setPostCount(getAllPosts().length)
+  }, [location.pathname])
 
   const currentPage = navItems.find(item =>
     item.exact ? location.pathname === item.to : location.pathname.startsWith(item.to) && item.to !== '/'
@@ -78,7 +84,12 @@ export default function Layout() {
               onClick={() => setSidebarOpen(false)}
             >
               <Icon className="w-4 h-4 flex-shrink-0" />
-              <span>{label}</span>
+              <span className="flex-1">{label}</span>
+              {to === '/biblioteca' && postCount > 0 && (
+                <span className="ml-auto bg-gold-500/20 text-gold-300 text-xs font-bold rounded-full px-1.5 py-0.5 leading-none">
+                  {postCount}
+                </span>
+              )}
             </NavLink>
           ))}
         </nav>

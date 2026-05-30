@@ -12,7 +12,7 @@ import {
   BookOpen,
   Star,
 } from 'lucide-react'
-import { ContentType, MarketSegment } from '../types'
+import { ContentType, MarketSegment, VoiceTone } from '../types'
 
 interface DayPlan {
   day: number
@@ -22,6 +22,7 @@ interface DayPlan {
   contentType: ContentType
   contentTypeLabel: string
   segment: MarketSegment
+  voiceTone: VoiceTone
   icon: React.ElementType
   color: string
   bgColor: string
@@ -29,7 +30,7 @@ interface DayPlan {
   description: string
   suggestedThemes: string[]
   objective: string
-  tone: string
+  toneLabel: string
 }
 
 const weekPlan: DayPlan[] = [
@@ -53,7 +54,8 @@ const weekPlan: DayPlan[] = [
       'Manutenção preventiva vs. corretiva em geradores',
     ],
     objective: 'Construir autoridade e reconhecimento técnico',
-    tone: 'Técnico / Profissional',
+    voiceTone: 'tecnico',
+    toneLabel: 'Técnico / Profissional',
   },
   {
     day: 2,
@@ -75,7 +77,8 @@ const weekPlan: DayPlan[] = [
       'Novas regulamentações de segurança energética',
     ],
     objective: 'Gerar awareness e despertar interesse',
-    tone: 'Estratégico / Comercial',
+    voiceTone: 'estrategico',
+    toneLabel: 'Estratégico / Comercial',
   },
   {
     day: 3,
@@ -97,7 +100,8 @@ const weekPlan: DayPlan[] = [
       'Checklist de manutenção mensal para geradores',
     ],
     objective: 'Gerar engajamento e compartilhamentos',
-    tone: 'Consultivo / Educativo',
+    voiceTone: 'consultivo',
+    toneLabel: 'Consultivo / Educativo',
   },
   {
     day: 4,
@@ -119,7 +123,8 @@ const weekPlan: DayPlan[] = [
       'Empresas de facilities: solucionamos sua energia',
     ],
     objective: 'Atrair parceiros e representantes',
-    tone: 'Comercial / Direto',
+    voiceTone: 'comercial',
+    toneLabel: 'Comercial / Direto',
   },
   {
     day: 5,
@@ -141,7 +146,8 @@ const weekPlan: DayPlan[] = [
       'O que nos motivou a representar a Geradores Capanema',
     ],
     objective: 'Criar conexão emocional e confiança',
-    tone: 'Emocional Moderado / Inspirador',
+    voiceTone: 'emocional',
+    toneLabel: 'Emocional Moderado / Inspirador',
   },
 ]
 
@@ -195,7 +201,7 @@ function DayCard({ plan, onGenerate, isToday }: DayCardProps) {
         </div>
         <div className="bg-gray-50 rounded-lg p-2.5">
           <p className="text-xs text-gray-400 font-medium mb-0.5">Tom</p>
-          <p className="text-xs font-semibold text-navy-700 leading-tight">{plan.tone}</p>
+          <p className="text-xs font-semibold text-navy-700 leading-tight">{plan.toneLabel}</p>
         </div>
       </div>
 
@@ -247,14 +253,9 @@ export default function Calendar() {
           contentType: plan.contentType,
           segment: plan.segment,
           objective: plan.objective,
-          voiceTone: plan.tone.toLowerCase().includes('técnico') ? 'tecnico' :
-            plan.tone.toLowerCase().includes('emocional') ? 'emocional' :
-            plan.tone.toLowerCase().includes('inspirador') ? 'inspirador' :
-            plan.tone.toLowerCase().includes('comercial') ? 'comercial' :
-            plan.tone.toLowerCase().includes('estratégico') ? 'estrategico' :
-            plan.tone.toLowerCase().includes('consultivo') ? 'consultivo' : 'profissional',
-        }
-      }
+          voiceTone: plan.voiceTone,
+        },
+      },
     })
   }
 

@@ -13,10 +13,29 @@ O Fenix LinkedIn Content Engine permite criar posts estratégicos para o LinkedI
 
 ---
 
-## Pré-requisitos
+## Deploy no Vercel (Recomendado — sem precisar de PC)
+
+### Passo a passo
+
+1. Acesse [vercel.com](https://vercel.com) e faça login com sua conta GitHub
+2. Clique em **"Add New Project"**
+3. Importe o repositório `vianarol-source/TDS_CAPANEMA`
+4. Em **"Root Directory"**, selecione `fenix-linkedin-engine`
+5. Em **"Environment Variables"**, adicione:
+   - `ANTHROPIC_API_KEY` = sua chave da API Anthropic
+6. Clique em **Deploy**
+
+A URL gerada (ex: `fenix-linkedin-engine.vercel.app`) já funciona com IA real.
+
+> **Sem API Key:** a ferramenta funciona normalmente com geração por templates — a IA é um upgrade, não um requisito.
+
+---
+
+## Pré-requisitos (desenvolvimento local)
 
 - Node.js 18+ instalado
 - npm 9+ (ou yarn/pnpm)
+- [Vercel CLI](https://vercel.com/docs/cli) para rodar com IA localmente: `npm i -g vercel`
 
 ---
 
@@ -29,11 +48,17 @@ cd fenix-linkedin-engine
 # 2. Instale as dependências
 npm install
 
-# 3. Inicie o servidor de desenvolvimento
+# 3a. Rodar SEM IA (geração por templates — sem Vercel CLI)
 npm run dev
 
+# 3b. Rodar COM IA (cria .env.local com ANTHROPIC_API_KEY primeiro)
+cp .env.example .env.local
+# edite .env.local e adicione sua chave
+vercel dev
+
 # 4. Acesse no navegador
-# http://localhost:5173
+# http://localhost:5173  (sem IA)
+# http://localhost:3000  (com IA via vercel dev)
 ```
 
 ### Build para produção
