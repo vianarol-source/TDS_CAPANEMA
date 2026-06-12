@@ -8,6 +8,7 @@ import {
   Menu,
   X,
   ChevronRight,
+  Leaf,
 } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { getAllPosts } from '../utils/storage'
@@ -17,6 +18,7 @@ const navItems = [
   { to: '/gerar', label: 'Gerar Conteúdo', icon: PenSquare, exact: false },
   { to: '/biblioteca', label: 'Biblioteca', icon: BookOpen, exact: false },
   { to: '/calendario', label: 'Calendário Editorial', icon: CalendarDays, exact: false },
+  { to: '/licencas', label: 'Licenças Ambientais', icon: Leaf, exact: false },
 ]
 
 export default function Layout() {

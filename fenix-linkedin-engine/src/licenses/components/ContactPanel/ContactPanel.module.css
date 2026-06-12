@@ -1,0 +1,338 @@
+.contactTrigger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btnFindContact {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--green-700);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.btnFindContact:hover {
+  background: var(--green-800);
+}
+
+.contactSource {
+  font-size: 11px;
+  color: var(--gray-400);
+}
+
+.contactLoading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--gray-500);
+  padding: 8px 0;
+}
+
+.contactSpinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--gray-200);
+  border-top-color: var(--green-600);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.contactError {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--red-100);
+  color: var(--red-500);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btnRetry {
+  background: none;
+  border: 1.5px solid var(--red-500);
+  color: var(--red-500);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Contact panel */
+.contactPanel {
+  background: white;
+  border: 1.5px solid var(--green-100);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contactCompany {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.3;
+}
+
+.contactFantasy {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+.contactStatus {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.statusAtiva  { background: var(--green-100); color: var(--green-700); }
+.statusInativa { background: var(--red-100);  color: var(--red-500); }
+
+/* Grid */
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.contactItem {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.contactItemIcon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.contactItemLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.contactItemValue {
+  font-size: 13px;
+  color: var(--gray-800);
+  line-height: 1.4;
+}
+
+.contactLink {
+  color: var(--green-700);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.1s;
+}
+
+.contactLink:hover {
+  text-decoration-color: var(--green-700);
+}
+
+/* Sócios */
+.sociosSection {
+  border-top: 1px solid var(--gray-100);
+  padding-top: 12px;
+}
+
+.sociosTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.sociosList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.socioItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.socioIcon { font-size: 18px; }
+
+.socioNome {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.socioQual {
+  font-size: 11px;
+  color: var(--gray-500);
+  margin-top: 1px;
+}
+
+.contactRuralHint {
+  font-size: 12px;
+  color: #a16207;
+  background: #fef9c3;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.contactRuralTag {
+  display: inline-block;
+  margin-left: 8px;
+  background: #fef9c3;
+  color: #a16207;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #fde68a;
+  vertical-align: middle;
+}
+
+.cnaeCode {
+  background: var(--gray-100);
+  color: var(--gray-600);
+  font-size: 11px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* CAR Section */
+.carSection {
+  border-top: 1.5px solid #fde68a;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.carHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.carTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #a16207;
+}
+
+.btnCar {
+  background: none;
+  border: 1.5px solid #ca8a04;
+  border-radius: var(--radius-md);
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a16207;
+  transition: background 0.12s;
+}
+
+.btnCar:hover {
+  background: #fefce8;
+}
+
+.carEmpty {
+  font-size: 13px;
+  color: var(--gray-500);
+  font-style: italic;
+}
+
+.carImoveis {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.carImovel {
+  border-radius: var(--radius-md);
+  border: 1.5px solid #fde68a;
+  background: #fefce8;
+  padding: 10px 14px;
+}
+
+.carImovelCancelado {
+  border-color: var(--gray-200);
+  background: var(--gray-50);
+  opacity: 0.7;
+}
+
+.carImovelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.carCodigo {
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray-700);
+}
+
+.carSituacao {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.carSituacaoAtivo    { background: #dcfce7; color: #15803d; }
+.carSituacaoPendente { background: #fef9c3; color: #a16207; }
+.carSituacaoCancelado { background: var(--gray-100); color: var(--gray-500); }
+
+.carImovelDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 12px;
+  color: var(--gray-700);
+}
+
+.contactDisclaimer {
+  font-size: 11px;
+  color: var(--gray-400);
+  border-top: 1px solid var(--gray-100);
+  padding-top: 10px;
+}

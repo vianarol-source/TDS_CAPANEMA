@@ -1,0 +1,150 @@
+.searchFilters {
+  background: white;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gray-200);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.filtersTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 20px;
+}
+
+.filtersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.filterGroupWide {
+  grid-column: 1 / -1;
+}
+
+.filterLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+}
+
+.filterInput,
+.filterSelect {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--gray-900);
+  background: white;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  outline: none;
+}
+
+.filterInput:focus,
+.filterSelect:focus {
+  border-color: var(--green-600);
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.15);
+}
+
+.filterInput::placeholder {
+  color: var(--gray-400);
+}
+
+/* Rural toggle */
+.filterRural {
+  margin-bottom: 20px;
+}
+
+.ruralToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--gray-200);
+  background: var(--gray-50);
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.ruralToggle:has(input:checked) {
+  border-color: #ca8a04;
+  background: #fefce8;
+}
+
+.ruralToggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ca8a04;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.ruralToggleIcon { font-size: 18px; }
+
+.ruralToggleLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.ruralToggleHint {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.filtersFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnSearch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-700);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 11px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btnSearch:hover:not(:disabled) {
+  background: var(--green-800);
+  transform: translateY(-1px);
+}
+
+.btnSearch:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 480px) {
+  .filtersGrid {
+    grid-template-columns: 1fr;
+  }
+  .filterGroupWide {
+    grid-column: 1;
+  }
+}
