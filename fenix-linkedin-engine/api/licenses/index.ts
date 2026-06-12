@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { searchLicenses } from '../_lib/licenseService'
-import { getQueryString } from '../_lib/queryHelpers'
-import type { LicenseStatus, LicenseType } from '../_lib/mockLicenses'
+import { searchLicenses } from '../_lib/licenseService.js'
+import { getQueryString } from '../_lib/queryHelpers.js'
+import type { LicenseStatus, LicenseType } from '../_lib/mockLicenses.js'
 
 const VALID_TYPES: LicenseType[] = ['LP', 'LI', 'LO', 'LAC', 'LAS', 'LAAS']
 const VALID_STATUSES: LicenseStatus[] = ['Ativa', 'Vencida', 'Suspensa', 'Cancelada', 'Em análise']

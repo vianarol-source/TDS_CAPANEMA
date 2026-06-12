@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { mockLicenses } from '../_lib/mockLicenses'
-import { scoreLicense } from '../_lib/scoringService'
-import type { ScoredLicense } from '../_lib/scoringService'
-import { getQueryString, getQueryStringOrDefault } from '../_lib/queryHelpers'
+import { mockLicenses } from '../_lib/mockLicenses.js'
+import { scoreLicense } from '../_lib/scoringService.js'
+import type { ScoredLicense } from '../_lib/scoringService.js'
+import { getQueryString, getQueryStringOrDefault } from '../_lib/queryHelpers.js'
 
 // Pré-calcula scores uma vez
 const scoredLeads: ScoredLicense[] = mockLicenses.map(scoreLicense)

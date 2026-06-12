@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { mockLicenses } from '../_lib/mockLicenses'
-import { getQueryString } from '../_lib/queryHelpers'
+import { mockLicenses } from '../_lib/mockLicenses.js'
+import { getQueryString } from '../_lib/queryHelpers.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const idParam = getQueryString(req.query.id)

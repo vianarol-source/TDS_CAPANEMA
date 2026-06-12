@@ -1,5 +1,5 @@
-import { STATES } from './states'
-import { RURAL_ACTIVITIES } from './cnae'
+import { STATES } from './states.js'
+import { RURAL_ACTIVITIES } from './cnae.js'
 
 export type LicenseType = 'LP' | 'LI' | 'LO' | 'LAC' | 'LAS' | 'LAAS'
 export type LicenseStatus = 'Ativa' | 'Vencida' | 'Suspensa' | 'Cancelada' | 'Em análise'

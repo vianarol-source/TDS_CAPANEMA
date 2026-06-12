@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import axios from 'axios'
-import { isRuralByCnae } from '../_lib/cnae'
-import { getQueryString } from '../_lib/queryHelpers'
+import { isRuralByCnae } from '../_lib/cnae.js'
+import { getQueryString } from '../_lib/queryHelpers.js'
 
 // BrasilAPI — gratuita, sem autenticação, dados públicos da Receita Federal
 const BRASIL_API = 'https://brasilapi.com.br/api/cnpj/v1'

@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import axios from 'axios'
-import { getQueryString } from '../_lib/queryHelpers'
+import { getQueryString } from '../_lib/queryHelpers.js'
 
 // SICAR – Sistema Nacional de Cadastro Ambiental Rural (Serviço Florestal Brasileiro)
 // Documentação: https://www.car.gov.br/publico/imoveis/index

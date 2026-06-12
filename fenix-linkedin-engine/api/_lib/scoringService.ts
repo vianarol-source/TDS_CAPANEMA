@@ -1,5 +1,5 @@
-import { RURAL_ACTIVITIES } from './cnae'
-import type { License, LicenseType } from './mockLicenses'
+import { RURAL_ACTIVITIES } from './cnae.js'
+import type { License, LicenseType } from './mockLicenses.js'
 
 const NORTH_STATES = new Set(['AM', 'PA', 'RR', 'AP', 'AC', 'RO', 'TO'])
 const MATOPIBA = new Set(['MA', 'TO', 'PI', 'BA'])

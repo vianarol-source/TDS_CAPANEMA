@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { mockLicenses } from './mockLicenses'
-import type { License, LicenseStatus, LicenseType } from './mockLicenses'
+import { mockLicenses } from './mockLicenses.js'
+import type { License, LicenseStatus, LicenseType } from './mockLicenses.js'
 
 const USE_MOCK = process.env.USE_MOCK !== 'false'
 
